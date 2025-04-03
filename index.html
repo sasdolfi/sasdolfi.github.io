@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Mode Girly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#nouveautes">Nouveautés</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="accueil">
+        <h1>Bienvenue dans le monde de la mode girly!</h1>
+        <div class="slider">
+            <img src="image1.jpg" alt="Mode 1">
+            <img src="image2.jpg" alt="Mode 2">
+            <img src="image3.jpg" alt="Mode 3">
+        </div>
+    </section>
+
+    <section id="nouveautes">
+        <h2>Nouveautés</h2>
+        <div class="produits">
+            <div class="produit">
+                <img src="produit1.jpg" alt="Produit 1">
+                <p>Robe chic</p>
+            </div>
+            <div class="produit">
+                <img src="produit2.jpg" alt="Produit 2">
+                <p>Pantalon stylé</p>
+            </div>
+            <div class="produit">
+                <img src="produit3.jpg" alt="Produit 3">
+                <p>Accessoire tendance</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="articles">
+            <article>
+                <h3>Les tendances de l'automne</h3>
+                <p>Découvrez les must-have de la saison...</p>
+            </article>
+            <article>
+                <h3>Les accessoires à adopter</h3>
+                <p>Ajoutez une touche girly à vos tenues...</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Mode Girly - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff80bf;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #ff3366;
+    text-align: center;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produits {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.produit {
+    text-align: center;
+    width: 30%;
+}
+
+.produit img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #ff80bf;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff3366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6699;
+}
