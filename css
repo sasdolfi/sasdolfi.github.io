@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode Girly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans le monde de la Mode Girly 👗💖</h1>
+        <p>Explore les dernières tendances de mode avec des looks adorables et girly !</p>
+    </header>
+    
+    <section class="gallery">
+        <h2>Mes Tenues Préférées 👚👠</h2>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300x400/ff69b4/ffffff?text=Tenu+1" alt="Tenue 1">
+            <p>Look casual avec une touche girly 🌸</p>
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300x400/ff69b4/ffffff?text=Tenu+2" alt="Tenue 2">
+            <p>Style chic et élégant 💅</p>
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300x400/ff69b4/ffffff?text=Tenu+3" alt="Tenue 3">
+            <p>Robe rose pour une soirée magique ✨</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Merci d'avoir visité mon site de mode girly 💖</p>
+    </footer>
+</body>
+</html>
