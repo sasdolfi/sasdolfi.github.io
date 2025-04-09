@@ -3,8 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de mode by Salome, Emma and Liv </title>
+    <title>Blog de mode by Salome, Emma and Liv</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f0f8; /* Fond rose */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff80bf;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            color: #ff3366;
+            text-align: center;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .produits {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .produit {
+            text-align: center;
+            width: 30%;
+        }
+
+        .produit img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ff80bf;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        form {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #ff3366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ff6699;
+        }
+
+        .gallery {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gallery .photo {
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        .gallery p {
+            color: #ff3366;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -75,127 +197,6 @@
         </form>
     </section>
 
-    <footer>
-        <p>© 2025 Mode Girly - Tous droits réservés</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f0f8;
-    color: #333;
-}
-
-header {
-    background-color: #ff80bf;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-h1, h2 {
-    color: #ff3366;
-    text-align: center;
-}
-
-.slider img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.produits {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.produit {
-    text-align: center;
-    width: 30%;
-}
-
-.produit img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer {
-    text-align: center;
-    background-color: #ff80bf;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-form {
-    text-align: center;
-    margin: 20px 0;
-}
-
-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: #ff3366;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #ff6699;
-}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mode Girly</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Bienvenue dans le monde de la Mode Girly 👗💖</h1>
-        <p>Explore les dernières tendances de mode avec des looks adorables et girly !</p>
-    </header>
-    
     <section class="gallery">
         <h2>Mes Tenues Préférées 👚👠</h2>
         <div class="photo">
@@ -213,6 +214,7 @@ form button:hover {
     </section>
 
     <footer>
+        <p>© 2025 Mode Girly - Tous droits réservés</p>
         <p>Merci d'avoir visité mon site de mode girly 💖</p>
     </footer>
 </body>
